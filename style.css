@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --light2-cyan: hsl(193, 13%, 59%);
+    --neon-green: hsl(150, 100%, 66%);
+    --greyish-blue: hsl(217, 19%, 38%);
+    --dark-greyish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+img {
+    display: inline-block;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--dark-blue);
+}
+
+.main-container{
+    max-width: 45rem;
+    width: 90%;
+}
+
+.note{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--light2-cyan);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+
+.main {
+    position: relative;
+    padding: 3.6rem 4rem 5.6rem 4rem;
+    width: 100%;
+    /* max-width: 45rem; */
+    text-align: center;
+    background-color: var(--dark-greyish-blue);
+    border-radius: 1.4rem;
+}
+
+.main .divider {
+    width: 100%;
+}
+
+.container-box .id {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    color: var(--neon-green);
+    margin-bottom: 2rem;
+}
+
+.container-box .text {
+    color: var(--light-cyan);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+}
+
+.dice-btn{
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.dice-btn img{
+    width: 2rem;
+}
+
+
+.dice-btn:hover, .dice-btn:active{
+    box-shadow: 0px 0px 30px 0px var(--neon-green);
+}
+
+.credit{
+    margin-bottom: 0;
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+
+.credit p{
+    margin-bottom: 0.5rem;
+}
+
+.credit a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--light2-cyan);
+}
+
+.credit a:hover, .credit a:active{
+    color: var(--light-cyan);
+}
